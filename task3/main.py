@@ -18,7 +18,7 @@ def print_directory_structure(path: Path, prefix: str = ""):
                 print(f"{prefix}{Fore.BLUE}{item.name}{Style.RESET_ALL}")
                 print_directory_structure(item, prefix + "  ")
             except PermissionError:
-                print(f"{prefix}{Fore.RED}{"  Access denied"}{Style.RESET_ALL}")
+                print(f"{prefix}{Fore.RED}{'  Access denied'}{Style.RESET_ALL}")
         else:
             print(f"{prefix}{Fore.GREEN}{item.name}{Style.RESET_ALL}")
 
